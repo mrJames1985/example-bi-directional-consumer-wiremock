@@ -56,7 +56,7 @@ class ProductApiClientTest extends WireMockPactBaseTest {
 		assertThat(product.getId(), is("27"));
 	}
 
-	/*@Test
+	@Test
 	void getProducts() throws IOException {
 
 		this.wiremock.stubFor(WireMock.get(WireMock.urlEqualTo("/products"))
@@ -66,5 +66,5 @@ class ProductApiClientTest extends WireMockPactBaseTest {
 		final List<Product> products = this.productClient.getProducts();
 		assertThat(products.get(0).getId(), is("10"));
 	}
-	*/
+	
 }
